@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/komlraj/static/css/main.63c76ce6.css",
+    "main.js": "/komlraj/static/js/main.e8d08a7c.js",
+    "static/js/453.a64e5e1e.chunk.js": "/komlraj/static/js/453.a64e5e1e.chunk.js",
+    "static/media/komal.jpeg": "/komlraj/static/media/komal.891c3aa52a83e3b03073.jpeg",
+    "static/media/main-image.jpeg": "/komlraj/static/media/main-image.beed32b348c191400345.jpeg",
+    "index.html": "/komlraj/index.html",
+    "main.63c76ce6.css.map": "/komlraj/static/css/main.63c76ce6.css.map",
+    "main.e8d08a7c.js.map": "/komlraj/static/js/main.e8d08a7c.js.map",
+    "453.a64e5e1e.chunk.js.map": "/komlraj/static/js/453.a64e5e1e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63c76ce6.css",
+    "static/js/main.e8d08a7c.js"
+  ]
+}
