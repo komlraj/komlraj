@@ -1,28 +1,53 @@
-import {seoIcon} from "../images/seoIcon";
-import { web3Icon } from '../images/web3Icon';
+import { seoIcon } from "../images/seoIcon";
+import { web3Icon } from "../images/web3Icon";
+import HtmlIcon from "../images/html-icon.png";
+import CssIcon from "../images/css-icon.png";
+import JsIcon from "../images/js-icon.png";
+import GraphQl from "../images/graphql.svg";
+import TsIcon from "../images/typescript.svg";
+import ReactIcon from "../images/react-icon.png";
+import NodeIcon from "../images/node-js.svg";
+import VueIcon from "../images/vue-js.svg";
 
 const Skills = () => {
   return (
     <section className="skill-section">
-      <div className="section-title">Skills</div>
-      <div className="hexa-main-wrapper">
-        <div className="hexa-wrapper">
-          <div className="hexa">HTML</div>
-          <div className="hexa">CSS</div>
-          <div className="hexa">Javascript</div>
-        </div>
-        <div className="hw-pos">
-          <div className="hexa-wrapper-2">
-            <div className="hexa">GraphQL</div>
-            <div className="hexa">Typescript</div>
+      <div className="skills">
+        <div className="section-title">Skills</div>
+        <div className="skill-card-wrapper">
+          <div className="skill-card">
+            <img src={HtmlIcon} alt="html-icon" />
+            HTML
           </div>
-          <div className="hexa-wrapper hw-2">
-            <div className="hexa">ReactJs</div>
-            <div className="hexa hexa-m-l">NodeJs</div>
+          <div className="skill-card">
+            <img src={CssIcon} alt="css-icon" />
+            CSS
           </div>
-        </div>
-        <div className="hexa-wrapper hw-3">
-          <div className="hexa">VueJs</div>
+          <div className="skill-card">
+            <img src={JsIcon} alt="js-icon" />
+            Javascript
+          </div>
+          <div className="skill-card">
+            <img src={GraphQl} alt="graphql-icon" />
+            GraphQL
+          </div>
+          <div className="skill-card">
+            <img src={TsIcon} alt="ts-icon" />
+            Typescript
+          </div>
+
+          <div className="skill-card">
+            <img src={ReactIcon} alt="react-icon" />
+            ReactJs
+          </div>
+          <div className="skill-card">
+            <img src={NodeIcon} alt="ts-icon" />
+            NodeJs
+          </div>
+          <div className="skill-card">
+            <img src={VueIcon} alt="ts-icon" />
+            VueJs
+          </div>
         </div>
       </div>
 
