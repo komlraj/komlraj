@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/komlraj/static/css/main.63c76ce6.css",
-    "main.js": "/komlraj/static/js/main.e8d08a7c.js",
+    "main.css": "/komlraj/static/css/main.8d32e6e9.css",
+    "main.js": "/komlraj/static/js/main.144382a2.js",
     "static/js/453.a64e5e1e.chunk.js": "/komlraj/static/js/453.a64e5e1e.chunk.js",
     "static/media/komal.jpeg": "/komlraj/static/media/komal.891c3aa52a83e3b03073.jpeg",
     "static/media/main-image.jpeg": "/komlraj/static/media/main-image.beed32b348c191400345.jpeg",
+    "static/media/node-js.svg": "/komlraj/static/media/node-js.e605cb5828b5744952b567458683f3b2.svg",
+    "static/media/graphql.svg": "/komlraj/static/media/graphql.d15ab57ad4660e8b74f363ff0029fd07.svg",
     "index.html": "/komlraj/index.html",
-    "main.63c76ce6.css.map": "/komlraj/static/css/main.63c76ce6.css.map",
-    "main.e8d08a7c.js.map": "/komlraj/static/js/main.e8d08a7c.js.map",
+    "static/media/typescript.svg": "/komlraj/static/media/typescript.521e4cf729af59b399e318e059a926f0.svg",
+    "static/media/vue-js.svg": "/komlraj/static/media/vue-js.9799d923aadf448170eb5c50cb25f010.svg",
+    "main.8d32e6e9.css.map": "/komlraj/static/css/main.8d32e6e9.css.map",
+    "main.144382a2.js.map": "/komlraj/static/js/main.144382a2.js.map",
     "453.a64e5e1e.chunk.js.map": "/komlraj/static/js/453.a64e5e1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.63c76ce6.css",
-    "static/js/main.e8d08a7c.js"
+    "static/css/main.8d32e6e9.css",
+    "static/js/main.144382a2.js"
   ]
 }
