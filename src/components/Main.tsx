@@ -113,12 +113,7 @@ const Main = () => {
         </div>
       </section>
 
-      <Skills skills={[
-        { name: "React", level: 90 },
-        { name: "JavaScript", level: 85 },
-        { name: "TypeScript", level: 80 },
-        { name: "HTML/CSS", level: 90 }
-      ]} />
+      <Skills />
       <ExperiencesAndEducation />
       {/* <TweetsComponent /> */}
       <GetInTouch />
