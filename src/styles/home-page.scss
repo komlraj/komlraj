@@ -1,7 +1,14 @@
-$primaryColor: #3f6d59;
+$primaryColor: #19402f;
 $secondPrimaryColor: #80b49d;
 $secondaryColor: #efefef;
 $whiteColor: #ffffff;
+$blackColor: #000000;
+$buttonBg: linear-gradient(
+  to bottom right,
+  #1c3a2d 0%,
+  #3f6d59 62%,
+  #04874e 100%
+);
 
 main {
   position: relative;
@@ -22,24 +29,27 @@ main {
 .section-title {
   font-size: 32px;
   font-weight: 700;
-  color: $primaryColor;
+  color: $whiteColor;
   text-align: center;
 }
 
 .main-section {
   display: flex;
+  background-color: $blackColor;
+  color: $whiteColor;
   .main-image-container {
     width: 50%;
     height: 90vh;
   }
   .main-image {
-    background: url("../images/main-image.jpeg") center no-repeat;
+    background: url("../images/main-image.jpeg");
     height: 100%;
     width: 100%;
-    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: auto;
     background-attachment: fixed;
 
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +61,6 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: $primaryColor;
   }
   .name-text-box {
     display: flex;
@@ -65,21 +74,22 @@ main {
     .designation {
       font-size: 28px;
       font-weight: 700;
-      opacity: 0.8;
+      opacity: 0.85;
     }
   }
   .reach-out-button {
-    background-color: $primaryColor;
+    background: $buttonBg;
     color: $whiteColor;
-    border-color: $primaryColor;
+    // border-color: $primaryColor;
     outline: none;
     padding: 8px 48px;
     font-size: 20px;
     font-weight: 700;
     margin-top: 32px;
     text-decoration: none;
+    border-radius: 8px;
     // height: 200px;
-  
+
     .arrow-icon {
       margin-left: 8px;
       color: $whiteColor;
@@ -108,8 +118,9 @@ main {
   color: $whiteColor;
   padding: 10%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 10%;
   .about-text-section {
     width: 50%;
     .about-me-title {
@@ -117,13 +128,12 @@ main {
       font-weight: 700;
     }
     .about-me-text {
-      font-size: 18px;
+      font-size: 24px;
       font-weight: 500;
-      line-height: 1.2;
+      line-height: 1.4;
     }
   }
 }
-
 
 @media (max-width: 800px) {
   .main-section {
@@ -153,13 +163,11 @@ main {
   }
 }
 
-
-
 .about-image-container {
   min-width: 300px;
   min-height: 300px;
-  height: 40vh;
-  width: 40vh;
+  height: 35vw;
+  width: 35vw;
   max-width: 500px;
   max-height: 500px;
 
@@ -175,8 +183,8 @@ main {
 
 .skill-section {
   padding: 12vh 10%;
-  background: $secondaryColor;
-  color: $primaryColor;
+  background: $blackColor;
+  color: $whiteColor;
 
   .skills {
     width: 80%;
@@ -198,6 +206,7 @@ main {
       font-size: 20px;
       font-weight: 600;
       background-color: $whiteColor;
+      color: $blackColor;
       padding: 16px 8px;
       border-radius: 4px;
       margin-top: 16px;
@@ -240,7 +249,7 @@ main {
       min-width: 150px;
       font-size: 20px;
       font-weight: 600;
-      color: $secondaryColor;
+      color: $blackColor;
       background-color: $secondPrimaryColor;
       padding: 16px 8px;
       border-radius: 4px;
@@ -250,7 +259,7 @@ main {
       svg {
         height: 32px;
         width: 32px;
-        color: $primaryColor;
+        color: $blackColor;
       }
     }
     .exploring-text {
@@ -270,7 +279,6 @@ main {
     font-weight: 500;
     line-height: 1.2;
   }
- 
 
   .container {
     margin: 0;
@@ -320,6 +328,8 @@ main {
   margin: 0 auto;
   display: flex;
   padding: 12vh 10%;
+  background-color: #0e0d0d;
+  color: $whiteColor;
 
   .title-with-line {
     display: inline-block;
@@ -335,13 +345,13 @@ main {
       display: inline-block;
       width: 20%;
       height: 4px;
-      background-color: $primaryColor;
+      background-color: $whiteColor;
     }
     .big-line {
       display: inline-block;
       width: 80%;
       height: 1px;
-      background-color: $primaryColor;
+      background-color: $whiteColor;
     }
   }
 
@@ -361,7 +371,7 @@ main {
     margin-left: 10%;
     h4 {
       text-transform: uppercase;
-      color: $primaryColor;
+      color: $whiteColor;
       margin: 0;
     }
     h5 {
@@ -369,7 +379,16 @@ main {
       font-size: 16px;
       a {
         text-decoration: none;
-        color: #000;
+        color: $whiteColor;
+        opacity: 0.8;
+      }
+    }
+    li {
+      font-size: 16px;
+      line-height: 1.3;
+      margin-bottom: 8px;
+      strong {
+        font-weight: 600;
       }
     }
   }
@@ -388,7 +407,7 @@ main {
   }
 }
 .education-section {
-  background-color: $secondaryColor;
+  background-color: $blackColor;
 }
 .contact-section {
   @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
@@ -396,14 +415,14 @@ main {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 12px;
-  line-height: 30px;
+  line-height: 20px;
   color: #777;
   background-color: #232323;
   background-image: url("https://images.unsplash.com/photo-1467241850596-6a0de48568da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80");
   background-size: cover;
 
   .container {
-    max-width: 400px;
+    max-width: 500px;
     width: 100%;
     margin: 0 auto;
     position: relative;
@@ -422,6 +441,7 @@ main {
   #contact {
     background: #f9f9f9;
     padding: 25px;
+    border-radius: 4px;
   }
 
   #contact h3 {
@@ -429,6 +449,7 @@ main {
     display: block;
     font-size: 30px;
     font-weight: 400;
+    margin: 0 0 18px 0;
   }
 
   #contact h4 {
@@ -527,24 +548,28 @@ main {
   padding: 12vh 10% 6vh 10%;
   display: flex;
   justify-content: space-between;
-  color: #4c4c4c;
+  color: $whiteColor;
+  background-color: $blackColor;
 }
 .icon-link {
   color: inherit;
   .twitter {
     svg {
-      fill: #1da1f2;
+      // fill: #1da1f2;
+      fill: $secondPrimaryColor;
     }
   }
   .linkedin {
     margin: 0 20px;
     svg {
-      fill: #0762c8;
+      // fill: #0762c8;
+      fill: $secondPrimaryColor;
     }
   }
   .github {
     svg {
-      fill: #000;
+      // fill: #000;
+      fill: $secondPrimaryColor;
     }
   }
 }

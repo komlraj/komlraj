@@ -8,17 +8,19 @@ import GraphQl from "../images/graphql.svg";
 import TsIcon from "../images/typescript.svg";
 import ReactIcon from "../images/react-icon.png";
 import NodeIcon from "../images/node-js.svg";
-import VueIcon from "../images/vue-js.svg";
+import NextIcon from "../images/nextjs-icon.svg";
+import AiIcon from "../images/ai-icon.webp";
+import PythonIcon from "../images/python.png";
 
 const skills = [
+  { name: "Typescript", image: TsIcon, alt: "ts-icon" },
+  { name: "Javascript", image: JsIcon, alt: "js-icon" },
+  { name: "React", image: ReactIcon, alt: "react-icon" },
+  { name: "Next", image: NextIcon, alt: "next-icon" },
   { name: "HTML", image: HtmlIcon, alt: "html-icon" },
   { name: "CSS", image: CssIcon, alt: "css-icon" },
-  { name: "Javascript", image: JsIcon, alt: "js-icon" },
   { name: "GraphQL", image: GraphQl, alt: "graphql-icon" },
-  { name: "Typescript", image: TsIcon, alt: "ts-icon" },
-  { name: "React", image: ReactIcon, alt: "react-icon" },
   { name: "Node", image: NodeIcon, alt: "node-icon" },
-  { name: "Vue", image: VueIcon, alt: "vue-icon" },
 ];
 
 const Skills = () => {
@@ -49,33 +51,20 @@ const Skills = () => {
         </div>
         <div className="ex-skill-card-wrapper">
           <div className="ex-skill-card">
-            {web3Icon()}
-            Web3
-          </div>
-          <div className="ex-skill-card">
-            {seoIcon()}
-            SEO
+            <Image src={PythonIcon} alt="python-icon" />
+            Python
           </div>
           <div className="ex-skill-card">
             <span>
-              <svg
-                stroke="currentColor"
-                fill="none"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                height="20"
-                width="20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M9 15v-6l7.745 10.65a9 9 0 1 1 2.255 -1.993"></path>
-                <path d="M15 12v-3"></path>
-              </svg>
+              <Image src={AiIcon} alt="ai-icon" />
             </span>
-            Next.js
+            AI tools
           </div>
+          <div className="ex-skill-card">
+            {web3Icon()}
+            Web3
+          </div>
+
           <div className="ex-skill-card">
             <span>
               <svg

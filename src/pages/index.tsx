@@ -6,9 +6,10 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Komalraj Portfolio</title>
+        <title>Komal Raj</title>
         <meta name="description" content="Komalraj's portfolio website" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
       <Main />
     </>
