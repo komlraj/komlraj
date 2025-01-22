@@ -1,7 +1,9 @@
-import { gsap } from "gsap";
+'use client';
+
 import GetInTouch from "./GetInTouch";
 import ExperiencesAndEducation from "./ExperiencesAndEductaion";
 import Skills from "./Skills";
+import AboutMe from "./AboutMe";
 // import TweetsComponent from "./TweetsComponent";
 
 const Main = () => {
@@ -94,25 +96,8 @@ const Main = () => {
           </a>
         </div>
       </section>
-      <section id="about-me" className="about-me-section d-f">
-        <div className="about-text-section">
-          <span className="about-me-title">About Me</span>
-          <p className="about-me-text">
-            Hello! I’m a girl with a passion for coding and creating amazing
-            websites. As a Senior Software Engineer, I specialize in Next.js,
-            React.js, TypeScript, and JavaScript. My skills go beyond the basics
-            – I’m the one you call when you need web optimization, error
-            handling, and intricate logic to make your website lightning-fast.
-            Leveraging the power of AI tools, I’m dedicated to crafting seamless
-            user experiences and ensuring that websites run smoothly. <br />
-            <br /> When I’m not coding, you can find me exploring new
-            technologies and enjoying a good cup of coffee. Let’s make the web a
-            better place together!
-          </p>
-        </div>
-        <div className="about-image-container">
-          <div className="about-image"></div>
-        </div>
+      <section id="about-me">
+        <AboutMe />
       </section>
 
       <Skills />
