@@ -5,7 +5,7 @@ export default function AboutMe() {
     <div className="about-me-section d-f">
       <div className="about-text-section">
         <span className="about-me-title">About Me</span>
-        <p className="about-me-text">
+        <div className="about-me-text">
           <AnimatedText
             text="Hello! I’m a girl with a passion for coding and creating amazing
       websites. As a Senior Software Engineer, I specialize in Next.js,
@@ -18,7 +18,7 @@ export default function AboutMe() {
       technologies and enjoying a good cup of coffee. Let’s make the web a
       better place together!"
           />
-        </p>
+        </div>
       </div>
       <div className="about-image-container">
         <div className="about-image"></div>

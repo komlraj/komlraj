@@ -30,7 +30,7 @@ const Skills = () => {
         <div className="section-title">Skills</div>
         <div className="skill-card-wrapper">
           {skills.map((skill) => (
-            <div className="skill-card">
+            <div className="skill-card" key={skill.name}>
               <Image src={skill.image} alt={skill.alt} />
               {skill.name}
             </div>
