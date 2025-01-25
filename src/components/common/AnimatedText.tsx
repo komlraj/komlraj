@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
 import React, { useRef } from "react";
 import { motion, useInView, Variants } from "framer-motion";
 
 interface AnimatedTextProps {
-  text: string;
+  text: string[];
 }
 
 const AnimatedText: React.FC<AnimatedTextProps> = ({ text }) => {
@@ -17,14 +17,14 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text }) => {
       opacity: 1,
       transition: {
         staggerChildren: 0.12,
-        delayChildren: 0.02 * i,
+        delayChildren: 0.01 * i,
       },
     }),
   };
 
   const charVariants: Variants = {
     hidden: {
-      opacity: 0.2,
+      opacity: 0.4,
       transition: {
         type: "spring",
         damping: 12,
@@ -48,14 +48,18 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text }) => {
       animate={isInView ? "visible" : "hidden"}
       variants={containerVariants}
     >
-      {text.split("").map((char, index) => (
-        <motion.span
-          key={index}
-          variants={charVariants}
-          style={{ display: "inline-block" }}
-        >
-          {char === " " ? "\u00A0" : char}
-        </motion.span>
+      {text.map((paragraph, paragraphIndex) => (
+        <motion.p key={paragraphIndex} style={{ marginBottom: "1rem" }}>
+          {paragraph.split("").map((char: string, index: number) => (
+            <motion.span
+              key={`${paragraphIndex}-${index}`}
+              variants={charVariants}
+              style={{ display: "inline-block" }}
+            >
+              {char === " " ? "\u00A0" : char}
+            </motion.span>
+          ))}
+        </motion.p>
       ))}
     </motion.div>
   );
