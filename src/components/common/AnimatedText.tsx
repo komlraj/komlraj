@@ -49,15 +49,22 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text }) => {
       variants={containerVariants}
     >
       {text.map((paragraph, paragraphIndex) => (
-        <motion.p key={paragraphIndex} style={{ marginBottom: "1rem" }}>
-          {paragraph.split("").map((char: string, index: number) => (
-            <motion.span
-              key={`${paragraphIndex}-${index}`}
-              variants={charVariants}
-              style={{ display: "inline-block" }}
+        <motion.p key={paragraphIndex} style={{ marginBottom: "1rem", lineHeight: "1.6" }}>
+          {paragraph.split(" ").map((word, wordIndex) => (
+            <span 
+              key={`word-${paragraphIndex}-${wordIndex}`} 
+              style={{ display: "inline-block", marginRight: "0.25rem" }}
             >
-              {char === " " ? "\u00A0" : char}
-            </motion.span>
+              {word.split("").map((char, charIndex) => (
+                <motion.span
+                  key={`char-${paragraphIndex}-${wordIndex}-${charIndex}`}
+                  variants={charVariants}
+                  style={{ display: "inline-block" }}
+                >
+                  {char}
+                </motion.span>
+              ))}
+            </span>
           ))}
         </motion.p>
       ))}
@@ -66,3 +73,4 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text }) => {
 };
 
 export default AnimatedText;
+
