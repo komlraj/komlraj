@@ -18,7 +18,7 @@ export default function AboutMe() {
     gsap.fromTo(
       aboutSection,
       {
-        x: '-10%',
+        x: '-2%',
         opacity: 0,
       },
       {
@@ -29,25 +29,6 @@ export default function AboutMe() {
         scrollTrigger: {
           trigger: aboutSection,
           start: 'top center+=20%',
-          toggleActions: 'play none none reverse',
-        },
-      }
-    );
-
-    gsap.fromTo(
-      imageSection,
-      {
-        scale: 0.9,
-        opacity: 0,
-      },
-      {
-        scale: 1,
-        opacity: 1,
-        duration: 1,
-        ease: 'power2.out',
-        scrollTrigger: {
-          trigger: imageSection,
-          start: 'top center+=30%',
           toggleActions: 'play none none reverse',
         },
       }

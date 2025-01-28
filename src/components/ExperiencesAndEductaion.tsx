@@ -14,8 +14,8 @@ const ExperiencesAndEductaion = () => {
         <div className="experience-card-wrapper">
           <div className="experience-card">
             {/* <span className="red-dot"></span> */}
-            <span>2022</span>
-            <div className="experience-details">
+            <div>
+              <span>2022</span>
               <h4>Senior Software Engineer - Frontend</h4>
               <h5>
                 <a
@@ -26,6 +26,8 @@ const ExperiencesAndEductaion = () => {
                   Virtual Internships
                 </a>
               </h5>
+            </div>
+            <div className="experience-details">
               <ul>
                 <li>
                   <strong>Optimized Web Solutions Inc.:</strong>
@@ -56,8 +58,8 @@ const ExperiencesAndEductaion = () => {
           <div className="experience-card">
             {/* <span className="red-dot"></span> */}
 
-            <span>2020</span>
-            <div className="experience-details">
+            <div>
+              <span>2020</span>
               <h4>Software Engineer</h4>
               <h5>
                 <a
@@ -68,6 +70,8 @@ const ExperiencesAndEductaion = () => {
                   Khelomore
                 </a>
               </h5>
+            </div>
+            <div className="experience-details">
               <ul>
                 <li>
                   Spearheaded website optimization initiatives, enhancing user
@@ -95,8 +99,8 @@ const ExperiencesAndEductaion = () => {
           </div>
           <div className="experience-card">
             {/* <span className="red-dot"></span> */}
-            <span>2019</span>
-            <div className="experience-details">
+            <div>
+              <span>2019</span>
               <h4>Software Engineer</h4>
               <h5>
                 <a
@@ -107,6 +111,8 @@ const ExperiencesAndEductaion = () => {
                   CityMall
                 </a>
               </h5>
+            </div>
+            <div className="experience-details">
               <ul>
                 <li>
                   <strong>OnlineShopify:</strong> Developed and designed a
@@ -126,8 +132,8 @@ const ExperiencesAndEductaion = () => {
             </div>
           </div>
           <div className="experience-card">
-            <span>2019</span>
-            <div className="experience-details">
+            <div>
+              <span>2019</span>
               <h4>Fullstack Engineer Intern</h4>
               <h5>
                 <a
@@ -138,6 +144,8 @@ const ExperiencesAndEductaion = () => {
                   Drishti
                 </a>
               </h5>
+            </div>
+            <div className="experience-details">
               <ul>
                 <li>
                   <strong>AI Manufacturing Monitor:</strong> Contributed to an
@@ -164,10 +172,12 @@ const ExperiencesAndEductaion = () => {
         </div>
         <div className="experience-card-wrapper">
           <div className="experience-card">
-            <span>2018</span>
-            <div className="experience-details">
-              <h4> Web development course</h4>
+            <div>
+              <span>2018</span>
+              <h4>Web development course</h4>
               <h5>Altcampus</h5>
+            </div>
+            <div className="experience-details">
               <ul>
                 <li>
                   <strong>StackForge Technologies:</strong> Born out of a
@@ -189,10 +199,12 @@ const ExperiencesAndEductaion = () => {
             </div>
           </div>
           <div className="experience-card">
-            <span>2016</span>
-            <div className="experience-details">
+            <div>
+              <span>2016</span>
               <h4>Bachelor of Computer Applications</h4>
               <h5>Bihar University</h5>
+            </div>
+            <div className="experience-details">
               <ul>
                 <li>
                   <strong>TechSavvy Solutions:</strong> Spearheaded development
