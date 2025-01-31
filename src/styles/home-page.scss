@@ -1,7 +1,14 @@
-$primaryColor: #3f6d59;
-$secondPrimaryColor: #80b49d;
+$primaryColor: #19402f;
+$secondPrimaryColor: #6dc8a0;
 $secondaryColor: #efefef;
 $whiteColor: #ffffff;
+$blackColor: #000000;
+$buttonBg: linear-gradient(
+  to bottom right,
+  #1c3a2d 0%,
+  #3f6d59 62%,
+  #04874e 100%
+);
 
 main {
   position: relative;
@@ -22,24 +29,28 @@ main {
 .section-title {
   font-size: 32px;
   font-weight: 700;
-  color: $primaryColor;
+  color: $whiteColor;
   text-align: center;
 }
 
 .main-section {
   display: flex;
+  background-color: $blackColor;
+  color: $whiteColor;
   .main-image-container {
     width: 50%;
     height: 90vh;
   }
   .main-image {
-    background: url("./images/main-image.jpeg") center no-repeat;
+    background: url("../images/main-image.webp");
+    filter: blur(0px) brightness(0.5) contrast(1.15);
     height: 100%;
     width: 100%;
-    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
     background-attachment: fixed;
 
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +62,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: $primaryColor;
+    text-align: center;
+    padding: 0 3%;
   }
   .name-text-box {
     display: flex;
@@ -65,21 +77,22 @@ main {
     .designation {
       font-size: 28px;
       font-weight: 700;
-      opacity: 0.8;
+      opacity: 0.85;
     }
   }
   .reach-out-button {
-    background-color: $primaryColor;
+    background: $buttonBg;
     color: $whiteColor;
-    border-color: $primaryColor;
+    // border-color: $primaryColor;
     outline: none;
     padding: 8px 48px;
     font-size: 20px;
     font-weight: 700;
     margin-top: 32px;
     text-decoration: none;
+    border-radius: 8px;
     // height: 200px;
-  
+
     .arrow-icon {
       margin-left: 8px;
       color: $whiteColor;
@@ -89,12 +102,22 @@ main {
     }
     @keyframes pulse {
       0% {
+        opacity: 0.3;
+      }
+      25% {
         opacity: 0.5;
+        -webkit-transform: translateY(5px); /* Safari and Chrome */
+        transform: translateY(5px);
       }
       50% {
         opacity: 1;
         -webkit-transform: translateY(10px); /* Safari and Chrome */
         transform: translateY(10px);
+      }
+      75% {
+        opacity: 0.7;
+        -webkit-transform: translateY(5px); /* Safari and Chrome */
+        transform: translateY(5px);
       }
       100% {
         opacity: 0.5;
@@ -108,22 +131,23 @@ main {
   color: $whiteColor;
   padding: 10%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 10%;
   .about-text-section {
     width: 50%;
     .about-me-title {
       font-size: 32px;
       font-weight: 700;
+      margin-bottom: 16px;
     }
     .about-me-text {
-      font-size: 18px;
+      font-size: 24px;
       font-weight: 500;
-      line-height: 1.2;
+      line-height: 1.4;
     }
   }
 }
-
 
 @media (max-width: 800px) {
   .main-section {
@@ -153,18 +177,16 @@ main {
   }
 }
 
-
-
 .about-image-container {
   min-width: 300px;
   min-height: 300px;
-  height: 40vh;
-  width: 40vh;
+  height: 35vw;
+  width: 35vw;
   max-width: 500px;
   max-height: 500px;
 
   .about-image {
-    background: url("./images/komal.jpeg") center no-repeat;
+    background: url("../images/komal.jpeg") center no-repeat;
     height: 100%;
     width: 100%;
     background-position: top;
@@ -175,15 +197,16 @@ main {
 
 .skill-section {
   padding: 12vh 10%;
-  background: $secondaryColor;
-  color: $primaryColor;
+  background: $blackColor;
+  color: $whiteColor;
 
   .skills {
     width: 80%;
     margin: 0px auto 0px auto;
     .skill-card-wrapper {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 2%;
       flex-wrap: wrap;
       margin-top: 5vh;
     }
@@ -198,6 +221,7 @@ main {
       font-size: 20px;
       font-weight: 600;
       background-color: $whiteColor;
+      color: $blackColor;
       padding: 16px 8px;
       border-radius: 4px;
       margin-top: 16px;
@@ -227,7 +251,8 @@ main {
     margin: 150px auto 50px auto;
     .ex-skill-card-wrapper {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 2%;
       flex-wrap: wrap;
     }
     .ex-skill-card {
@@ -240,7 +265,7 @@ main {
       min-width: 150px;
       font-size: 20px;
       font-weight: 600;
-      color: $secondaryColor;
+      color: $blackColor;
       background-color: $secondPrimaryColor;
       padding: 16px 8px;
       border-radius: 4px;
@@ -250,7 +275,7 @@ main {
       svg {
         height: 32px;
         width: 32px;
-        color: $primaryColor;
+        color: $blackColor;
       }
     }
     .exploring-text {
@@ -270,7 +295,6 @@ main {
     font-weight: 500;
     line-height: 1.2;
   }
- 
 
   .container {
     margin: 0;
@@ -317,78 +341,128 @@ main {
 }
 
 .experience-section {
-  margin: 0 auto;
+  background-color: #0e0d0d;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.experience-container {
+  position: relative;
   display: flex;
-  padding: 12vh 10%;
+  color: $whiteColor;
+  padding: 12vh 5%;
+  min-height: 100vh;
+  width: 100%;
 
-  .title-with-line {
-    display: inline-block;
-    padding: 20px 10% 0 0;
-    width: 140%;
-    text-align: left;
-    .bottom-line {
-      display: flex;
-      align-items: center;
-      margin-top: 8px;
-    }
-    .small-line {
-      display: inline-block;
-      width: 20%;
-      height: 4px;
-      background-color: $primaryColor;
-    }
-    .big-line {
-      display: inline-block;
-      width: 80%;
-      height: 1px;
-      background-color: $primaryColor;
-    }
-  }
-
-  .experience-card-wrapper {
-    margin-left: 20%;
-  }
-  .experience-card {
+  .left-panel {
     position: relative;
-    max-width: 800px;
-    width: 100%;
-    // border-left: 1px solid;
-    padding: 24px;
-    display: flex;
-    align-items: baseline;
-  }
-  .experience-details {
-    margin-left: 10%;
-    h4 {
-      text-transform: uppercase;
-      color: $primaryColor;
-      margin: 0;
+    max-width: 45vw;
+    padding-right: 5%;
+    background-color: #0e0d0d;
+    z-index: 2;
+    max-height: 100vh;
+    overflow-y: auto;
+    flex-shrink: 0;
+
+    .year-markers {
+      list-style: none;
+      padding: 0;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+
+      .year-marker {
+        padding: 15px 0;
+        transition: all 0.5s ease;
+        opacity: 0.4;
+
+        &.active {
+          opacity: 1;
+          color: $secondPrimaryColor;
+        }
+
+        .year-content {
+          h4 {
+            margin: 6px 0;
+            font-size: 18px;
+          }
+
+          h5 {
+            margin: 0;
+            font-size: 16px;
+            a {
+              color: $whiteColor;
+              text-decoration: none;
+              opacity: 0.8;
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
     }
-    h5 {
-      margin: 12px 0 18px 0;
-      font-size: 16px;
-      a {
-        text-decoration: none;
-        color: #000;
+  }
+
+  .right-panel {
+    width: 60vw;
+    max-width: 60vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+    padding-left: 5%;
+    flex-grow: 1;
+
+    .experience-details {
+      margin: 15vh 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      ul {
+        list-style: disc;
+        padding: 0;
+        margin: 0;
+        width: 80%;
+
+
+        li {
+          margin-bottom: 16px;
+          line-height: 1.4;
+          font-size: 16px;
+
+          strong {
+            display: block;
+            margin-bottom: 4px;
+            color: $secondPrimaryColor;
+          }
+        }
+      }
+      &:first-child {
+        margin-top: 25vh;
+      }
+      &:last-child {
+        // margin-bottom: 25vh;
       }
     }
   }
 }
 
 @media (max-width: 800px) {
-  .experience-section {
+  .experience-container {
     flex-direction: column;
 
-    .title-with-line {
-      width: 80%;
-    }
-    .experience-card-wrapper {
-      margin-left: 0;
+    .left-panel,
+    .right-panel {
+      width: 100%;
+      padding: 5%;
     }
   }
 }
+
 .education-section {
-  background-color: $secondaryColor;
+  background-color: $blackColor;
 }
 .contact-section {
   @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
@@ -396,14 +470,14 @@ main {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 12px;
-  line-height: 30px;
+  line-height: 20px;
   color: #777;
   background-color: #232323;
   background-image: url("https://images.unsplash.com/photo-1467241850596-6a0de48568da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80");
   background-size: cover;
 
   .container {
-    max-width: 400px;
+    max-width: 500px;
     width: 100%;
     margin: 0 auto;
     position: relative;
@@ -422,6 +496,7 @@ main {
   #contact {
     background: #f9f9f9;
     padding: 25px;
+    border-radius: 4px;
   }
 
   #contact h3 {
@@ -429,6 +504,7 @@ main {
     display: block;
     font-size: 30px;
     font-weight: 400;
+    margin: 0 0 18px 0;
   }
 
   #contact h4 {
@@ -527,24 +603,28 @@ main {
   padding: 12vh 10% 6vh 10%;
   display: flex;
   justify-content: space-between;
-  color: #4c4c4c;
+  color: $whiteColor;
+  background-color: $blackColor;
 }
 .icon-link {
   color: inherit;
   .twitter {
     svg {
-      fill: #1da1f2;
+      // fill: #1da1f2;
+      fill: $secondPrimaryColor;
     }
   }
   .linkedin {
     margin: 0 20px;
     svg {
-      fill: #0762c8;
+      // fill: #0762c8;
+      fill: $secondPrimaryColor;
     }
   }
   .github {
     svg {
-      fill: #000;
+      // fill: #000;
+      fill: $secondPrimaryColor;
     }
   }
 }

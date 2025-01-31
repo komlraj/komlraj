@@ -1,6 +1,9 @@
+'use client';
+
 import GetInTouch from "./GetInTouch";
 import ExperiencesAndEducation from "./ExperiencesAndEductaion";
 import Skills from "./Skills";
+import AboutMe from "./AboutMe";
 // import TweetsComponent from "./TweetsComponent";
 
 const Main = () => {
@@ -17,7 +20,7 @@ const Main = () => {
             <svg
               stroke="currentColor"
               fill="currentColor"
-              stroke-width="0"
+              strokeWidth="0"
               viewBox="0 0 1024 1024"
               height="32"
               width="32"
@@ -37,7 +40,7 @@ const Main = () => {
             <svg
               stroke="currentColor"
               fill="currentColor"
-              stroke-width="0"
+              strokeWidth="0"
               viewBox="0 0 1024 1024"
               height="32"
               width="32"
@@ -57,7 +60,7 @@ const Main = () => {
             <svg
               stroke="currentColor"
               fill="currentColor"
-              stroke-width="0"
+              strokeWidth="0"
               viewBox="0 0 1024 1024"
               height="32"
               width="32"
@@ -82,35 +85,19 @@ const Main = () => {
           <div className="name-text-box">
             <span className="name">Komal Raj</span>
             <span className="designation">
-              Senior software engineer fueled by passion
+              Senior Software Engineer fueled by passion
             </span>
           </div>
-          <a href="#contact" className="reach-out-button">
-            Reach out!{" "}
-            <span class="arrow-icon">
-              <i class="far fa-arrow-alt-circle-down"></i>
+          <a href="#about-me" className="reach-out-button">
+            More about me{" "}
+            <span className="arrow-icon">
+              <i className="far fa-arrow-alt-circle-down"></i>
             </span>
           </a>
         </div>
       </section>
-      <section className="about-me-section d-f">
-        <div className="about-text-section">
-          <span className="about-me-title">About Me</span>
-          <p className="about-me-text">
-            Hello! I'm a girl with a passion for coding and creating amazing
-            websites. As a senior software frontend engineer, I specialize in
-            Reactjs and Javascript. My skills go beyond the basics – I'm the one
-            you call when you need web optimization, error handling, and
-            intricate logic to make your website lightning-fast. I'm dedicated
-            to crafting seamless user experiences and ensuring that websites run
-            smoothly. When I'm not coding, you can find me exploring new
-            technologies and enjoying a good cup of coffee. Let's make the web a
-            better place together!
-          </p>
-        </div>
-        <div className="about-image-container">
-          <div className="about-image"></div>
-        </div>
+      <section id="about-me">
+        <AboutMe />
       </section>
 
       <Skills />
@@ -120,7 +107,7 @@ const Main = () => {
       <footer className="footer">
         <div>
           <p>Design and developed with ❤️ by Komal</p>
-          <span>13kmlraj@gmail.com | &copy;2024</span>
+          <span>13kmlraj@gmail.com | &copy;2025</span>
         </div>
         <div>{/* <SocialIcons /> */}</div>
       </footer>
