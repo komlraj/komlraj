@@ -2,7 +2,6 @@
 
 import GetInTouch from "./GetInTouch";
 import ExperiencesAndEducation from "./ExperiencesAndEductaion";
-import ExperiencesAndEducation2 from "./ExperiencesAndEductaion2";
 import Skills from "./Skills";
 import AboutMe from "./AboutMe";
 // import TweetsComponent from "./TweetsComponent";
@@ -102,7 +101,7 @@ const Main = () => {
       </section>
 
       <Skills />
-      <ExperiencesAndEducation2 />
+      <ExperiencesAndEducation />
       {/* <TweetsComponent /> */}
       <GetInTouch />
       <footer className="footer">

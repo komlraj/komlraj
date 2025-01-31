@@ -421,7 +421,7 @@ main {
       align-items: center;
 
       ul {
-        list-style: none;
+        list-style: disc;
         padding: 0;
         margin: 0;
         width: 80%;
@@ -438,6 +438,12 @@ main {
             color: $secondPrimaryColor;
           }
         }
+      }
+      &:first-child {
+        margin-top: 25vh;
+      }
+      &:last-child {
+        // margin-bottom: 25vh;
       }
     }
   }
