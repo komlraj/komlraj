@@ -75,7 +75,7 @@ const experienceSections: ExperienceSection[] = [
       },
       {
         description:
-          "Developed new features and optimized existing ones to improve the website’s functionality and user experience.",
+          "Developed new features and optimized existing ones to improve the website's functionality and user experience.",
       },
     ],
   },
@@ -110,7 +110,7 @@ const experienceSections: ExperienceSection[] = [
   },
 ];
 
-const ExperiencesAndEducation2 = () => {
+const Experiences = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const leftPanelRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -204,4 +204,4 @@ const ExperiencesAndEducation2 = () => {
   );
 };
 
-export default ExperiencesAndEducation2;
+export default Experiences;
