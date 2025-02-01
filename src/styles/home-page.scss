@@ -426,7 +426,6 @@ main {
         margin: 0;
         width: 80%;
 
-
         li {
           margin-bottom: 16px;
           line-height: 1.4;
@@ -441,9 +440,6 @@ main {
       }
       &:first-child {
         margin-top: 25vh;
-      }
-      &:last-child {
-        // margin-bottom: 25vh;
       }
     }
   }
@@ -462,7 +458,86 @@ main {
 }
 
 .education-section {
-  background-color: $blackColor;
+  margin: 0 auto;
+  display: flex;
+  padding: 12vh 10%;
+  background-color: #0e0d0d;
+  color: $whiteColor;
+
+  .title-with-line {
+    display: inline-block;
+    padding: 20px 10% 0 0;
+    width: 140%;
+    text-align: left;
+    .bottom-line {
+      display: flex;
+      align-items: center;
+      margin-top: 8px;
+    }
+    .small-line {
+      display: inline-block;
+      width: 20%;
+      height: 4px;
+      background-color: $whiteColor;
+    }
+    .big-line {
+      display: inline-block;
+      width: 80%;
+      height: 1px;
+      background-color: $whiteColor;
+    }
+  }
+
+  .education-card-wrapper {
+    margin-left: 20%;
+  }
+  .education-card {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    padding: 36px 0px;
+    align-items: baseline;
+    .education-title {
+      text-transform: uppercase;
+      color: $whiteColor;
+      margin: 10px 0;
+    }
+    .education-institute {
+      color: $whiteColor;
+      margin: 0 0 16px 0;
+    }
+  }
+  .education-details {
+    h5 {
+      margin: 12px 0 18px 0;
+      font-size: 16px;
+      a {
+        text-decoration: none;
+        color: $whiteColor;
+        opacity: 0.8;
+      }
+    }
+    li {
+      font-size: 16px;
+      line-height: 1.3;
+      margin-bottom: 8px;
+      strong {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .education-section {
+    flex-direction: column;
+  }
+  .title-with-line {
+    width: 80%;
+  }
+  .education-card-wrapper {
+    margin-left: 0;
+  }
 }
 .contact-section {
   @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);

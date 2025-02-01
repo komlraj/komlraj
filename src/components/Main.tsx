@@ -1,9 +1,10 @@
 'use client';
 
 import GetInTouch from "./GetInTouch";
-import ExperiencesAndEducation from "./ExperiencesAndEductaion";
 import Skills from "./Skills";
 import AboutMe from "./AboutMe";
+import Education from "./Education";
+import Experiences from "./Experiences";
 // import TweetsComponent from "./TweetsComponent";
 
 const Main = () => {
@@ -101,7 +102,8 @@ const Main = () => {
       </section>
 
       <Skills />
-      <ExperiencesAndEducation />
+      <Experiences />
+      <Education />
       {/* <TweetsComponent /> */}
       <GetInTouch />
       <footer className="footer">
